@@ -1,0 +1,162 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Rocky Ahmed
+@URL: http://wethemez.com
+Author E-mail: rockybd1995@gmail.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Builder Construction 
+@Author: Rocky Ahmed
+@Developed By: Rocky Ahmed
+@Developer URL: http://rocky.wethemez.com
+Author E-mail: rockybd1995@gmail.com
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ predefin
+03/ header
+04/ button
+05/ banner
+06/ breadcrumb
+07/ about
+08/ team
+09/ project 
+10/ price 
+11/ team 
+12/ blog 
+13/ video  
+14/ features  
+15/ career  
+16/ contact 
+17/ footer
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+
+
+
+#loading{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background: #fff 
+  url('../img/preloder.gif')
+  no-repeat center ;
+  z-index: 99999;
+}
+.list {
+  list-style: none;
+  padding: 0%; 
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+
+   }
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: none; }
+
+.row.m0 {
+  margin: 0px; }
+
+
+
+
+
+/* Feature Area css
+============================================================================================ */
+.feature_area {
+  background: #f9f9ff; }
+  .feature_area.feature_tow {
+    background: #fff; }
+    .feature_area.feature_tow .feature_item {
+      background: #f9f9ff; }
+      .feature_area.feature_tow .feature_item:hover {
+        background: #fff; }
+  .feature_area.white_feature {
+    background: #fff; }
+    .feature_area.white_feature .feature_item {
+      background: #f9f9ff; }
+      .feature_area.white_feature .feature_item:hover {
+        background: #fff;
+         }
+
+.feature_inner {
+  margin-bottom: -30px; }
+
+.feature_item {
+  border-radius: 10%;
+  transition: all 1s linear 1s;
+
+  margin-bottom: 20%; }
+  .feature_item i {
+    margin-bottom: 35px;
+    display: block; }
+    .feature_item i:before {
+      margin: 30%;
+	  text-align: center;
+      font-size: 400%;
+      
+      line-height: 60px; }
+  .feature_item h4 {
+    
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+	
+	.feature_item:hover h4 {
+      background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+	  
+  .feature_item p {
+    margin-bottom: 0px; }
+
+    ..feature_item:hover P{
+       background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+  .feature_item .main_btn {
+    padding: 0px 30px;
+    line-height: 38px; }
+  .feature_item:hover {
+    box-shadow: 10px 20px 30px 0px rgba(0, 0, 0, 0.8);
+    border-color: #fff;
+    background: #fff;
+     transition: all 0.5s linear 1s;
+    padding: 10%;
+     }
+    .feature_item:hover i:before {
+      background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+/* End Feature Area css
+============================================================================================ */
+
+
+/*---------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+
