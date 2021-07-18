@@ -105,6 +105,7 @@ iframe {
   align-items: center;
   padding: 2%;
   background: linear-gradient(270deg, #ac004f, #e87f00);
+ 
   
 }
 
@@ -336,11 +337,12 @@ textarea.input100 {
 }
 
 .alert-validate::after {
-  content: "\f06a";
-  font-family: FontAwesome;
+  content: "\f071";
+  font-family:"Font Awesome\ 5 Free";
+  font-weight: 900;
   display: block;
   position: absolute;
-  color: #c80000;
+  color: #ac004f;
   font-size: 16px;
   top: 58%;
   right: 8px;
