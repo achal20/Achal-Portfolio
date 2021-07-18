@@ -168,7 +168,7 @@
    
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="javascript:sendmail()" method="post" >
+			<form class="contact100-form validate-form" name="google-sheet" method="post" action="javascript:sendemail()" >
 				<span class="contact100-form-title">
 					Contact Us
 				</span>
@@ -237,65 +237,49 @@
 <!--===============================================================================================-->
 	<script src="Contactform/js/jquery-3.5.1.min.js"></script>
 <!--===============================================================================================-->
-	<script>
-		$(".selection-2").select2({
-			minimumResultsForSearch: 18,
-			dropdownParent: $('#dropDownSelect1')
-		});
-	</script>
+	
 
 <!--===============================================================================================-->
 	<script src="Contactform/js/main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendemail() {
+            var name = $('#Name').val();
+            var email = $('#Email').val();
+            var message = $('#Message').val();
+    
+            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message;
+            Email.send({
+                SecureToken:"e282000d-af6e-464c-9a74-558f63527874",
+                To: 'wcscdwachal@gmail.com',
+                From: "achalgupta187@gmail.com",
+                Subject: "New message on contact us form ",
+                Body : Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message >= 'OK') {
+                        window.location.replace("thankyou.html")
+                    }
+                    else {
+                        console.error(message);
+                        window.location.replace("error.html")
+                    }
+                }
+            );
+        }
+    </script>
+
+    <script>
+        document.getElementById("form").onsubmit = function () {
+            document.getElementById('load').style.display = "inline"
+        }
+    </script>
 
 
 
 
-
-	<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-
-<script >
-function sendmail(){
-	var name =$('#Name').val();
-	var email =$('#Email').val();
-	var message =$('#Message').val();
-
-var Body="Name: " + name + "<br>Email: " + email + " <br>Message: " + message;
-
-}
-
-
-
-
-
-
-
-
-email.send({
-    Host : "smtp.gmail.com",
-    Username : "wcscdwachal@gmail.com",
-    Password : "wcscachal@&20",
-    To : 'wcscdwachal@gmail.com',
-    From : "rohangupta2052000@gmail.com",
-    Subject : "New Mail on contact form from:"+name,
-    Body :Body
-}).then(
-  message => {
-  						if(message=="OK"){
-  							window.location.replace("Thankyou for Connecting")
-  						}
-  						else{
-  							window.location.replace("error")
-  						}
-
-  }
-);
-  
-
-</script>
-
-
-	
 
 
 
@@ -339,3 +323,7 @@ function loading(){
 </body>
 
 </html>
+
+
+
+
