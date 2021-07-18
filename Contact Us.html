@@ -18,22 +18,14 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/bootstrap/css/bootstrap.min.css">
+
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.2-web/css/all.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/animate/animate.css">
+
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="Contactform/css/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Contactform/css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/Contact form.css">
 <!--===============================================================================================-->
 
@@ -156,8 +148,7 @@
 
        
 
-      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"style="box-shadow: 10px 20px 30px 0px rgba(0, 0, 0, 0.5)">
-   
+      
        
 
           <!-- Sidebar Toggle (Topbar) --> 
@@ -181,26 +172,26 @@
    
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="Contactform/js/main.js">
+			<form class="contact100-form validate-form" action="javascript:sendmail()" method="post" >
 				<span class="contact100-form-title">
 					Contact Us
 				</span>
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100">Your Name</span>
-					<input class="input100" type="text" name="name" placeholder="Enter your name">
+					<input class="input100" type="text" name="name" placeholder="Enter your name" id="Name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Email</span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+					<input class="input100" type="text" name="email" placeholder="Enter your email addess" id="Email">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Needed Services</span>
 					<div>
-						<select class="selection-2" name="service">
+						<select class="selection-2" name="service" id="Choose Services">
 							<option>Choose Services</option>
 							<option>Computer Hardware &software</option>
 							<option>Digital Marketing</option>
@@ -218,18 +209,18 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<textarea class="input100" name="message" placeholder="Your message here..." id="Message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn" onclick="myFunction()">
-							<span>
+						<button class="contact100-form-btn">
+							<span style="font-size: 130%;">
 							
-								Button under development
-								<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+								Submit
+							<i class="fas fa-arrow-right" ></i>
 							</span>
 						</button>
 					</div>
@@ -244,7 +235,7 @@
 
 	</div>
 
-   
+
    
    </div>
  </div>
@@ -266,37 +257,70 @@
 	 <div id="dropDownSelect1"></div>
 
 <!--===============================================================================================-->
-	<script src="Contactform/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="Contactform/js/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="Contactform/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="Contactform/vendor/bootstrap/js/popper.js"></script>
-	<script src="Contactform/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="Contactform/vendor/select2/select2.min.js"></script>
+	<script src="Contactform/js/select2.min.js"></script>
 	<script>
 		$(".selection-2").select2({
 			minimumResultsForSearch: 18,
 			dropdownParent: $('#dropDownSelect1')
 		});
 	</script>
-<!--===============================================================================================-->
-	<script src="Contactform/vendor/daterangepicker/moment.min.js"></script>
-	<script src="Contactform/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="Contactform/vendor/countdowntime/countdowntime.js"></script>
+
 <!--===============================================================================================-->
 	<script src="Contactform/js/main.js"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581868-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-23581868-13');
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://smtpjs.com/v3/smtp.js">
 </script>
+
+<script >
+function sendmail(){
+	var name =$('#Name').val();
+	var email =$('#Email').val();
+	var message =$('#Message').val();
+
+var Body='Name: '+name+'<br>Email:'+email+'<br>Message:'+message;
+
+}
+
+
+
+
+
+
+
+
+email.send({
+    Host : "smtp.gmail.com",
+    Username : "rohangupta2052000@gmail.com",
+    Password : "rohan@&20",
+    To : 'wcscdwachal@gmail.com',
+    From : "rohangupta2052000@gmail.com",
+    Subject : "New Mail on contact form from:"+name,
+    Body :Body
+}).then(
+	message =>{
+  	if(message== 'OK'){
+  		alert('ThankYou for visiting my website.');
+  	}
+  	else{
+  		console.error(message);
+  		alert('There is error at sending message.')
+  	}
+
+
+  }
+);
+  
+
+</script>
+
+
+	
 
 
 
