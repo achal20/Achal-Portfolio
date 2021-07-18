@@ -120,7 +120,7 @@
 
       <!-- Nav Item - contact -->
       <li class="nav-item active">
-        <a class="nav-link" href="1.html">
+        <a class="nav-link" href="Contact Us.html">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span>Contact Us</span></a>
       </li>
@@ -260,7 +260,7 @@ function sendmail(){
 	var email =$('#Email').val();
 	var message =$('#Message').val();
 
-var Body='Name: '+name+'<br>Email:'+email+'<br>Message:'+message;
+var Body="Name: " + name + "<br>Email: " + email + " <br>Message: " + message;
 
 }
 
@@ -280,7 +280,15 @@ email.send({
     Subject : "New Mail on contact form from:"+name,
     Body :Body
 }).then(
-  message => alert(ThankYou for visiting my website.)
+  message => {
+  						if(message=="OK"){
+  							window.location.replace("Thankyou for Connecting")
+  						}
+  						else{
+  							window.location.replace("error")
+  						}
+
+  }
 );
   
 
