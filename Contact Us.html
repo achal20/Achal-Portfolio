@@ -197,7 +197,7 @@
 							<span style="font-size: 130%;">
 							
 								Submit
-							
+							<i class="fas fa-arrow-right" ></i>
 							</span>
 						</button>
 
@@ -273,24 +273,14 @@ var Body='Name: '+name+'<br>Email:'+email+'<br>Message:'+message;
 
 email.send({
     Host : "smtp.gmail.com",
-    Username : "rohangupta2052000@gmail.com",
-    Password : "rohan@&20",
+    Username : "wcscdwachal@gmail.com",
+    Password : "wcscachal@&20",
     To : 'wcscdwachal@gmail.com',
     From : "rohangupta2052000@gmail.com",
     Subject : "New Mail on contact form from:"+name,
     Body :Body
 }).then(
-	message =>{
-  	if(message== 'OK'){
-  		alert('ThankYou for visiting my website.');
-  	}
-  	else{
-  		console.error(message);
-  		alert('There is error at sending message.')
-  	}
-
-
-  }
+  message => alert(ThankYou for visiting my website.)
 );
   
 
