@@ -297,15 +297,11 @@
     
             var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message;
             Email.send({
-                Host : "smtp.gmail.com",
-                Username : "wcscdwachal@gmail.com",
-                Password : "wcscachal@&20",
-                To : 'wcscdwachal@gmail.com',
-                From : "wcscdwachal@gmail.com",
+                SecureToken: "27162840-3b9a-4a39-bac9-34a108ca5570",
+                To: 'wcscdwachal@gmail.com',
+                From: "wcscdwachal@gmail.com",
                 Subject: "New message on contact us form ",
                 Body : Body
-
-    
 
 
             }).then(
