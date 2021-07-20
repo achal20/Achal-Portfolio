@@ -57,6 +57,7 @@ Table of Content:
   url('../img/preloder.gif')
   no-repeat center ;
   z-index: 99999;
+  display: none;
 
 }
 
