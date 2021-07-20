@@ -193,7 +193,7 @@
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn" ></div>
-						<button class="contact100-form-btn" id="sendmail()">
+						<button class="contact100-form-btn" >
 							<span style="font-size: 130%;">
 							
 								Submit
@@ -244,18 +244,18 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
-        function sendemail() {
+        function sendemail(){
             var name = $('#Name').val();
             var email = $('#Email').val();
             var message = $('#Message').val();
     
             var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message;
             Email.send({
-                SecureToken:"e282000d-af6e-464c-9a74-558f63527874",
+                SecureToken:"2d248801-a9fb-425a-bd3e-babcc8d937e1",
                 To: 'wcscdwachal@gmail.com',
                 From: "wcscdwachal@gmail.com",
                 Subject: "New message on contact us form ",
-                Body : Body;
+                Body : Body,
             }).then(
                 message => {
                     //console.log (message);
@@ -265,17 +265,14 @@
                     else {
                         console.error(message);
                         window.location.replace("error.html")
+                        
                     }
                 }
             );
         }
     </script>
 
-    <script>
-        document.getElementById("form").onsubmit = function () {
-            document.getElementById('load').style.display = "inline"
-        }
-    </script>
+
 
 
 
