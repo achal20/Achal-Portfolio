@@ -1,0 +1,54 @@
+#notfound .notfound-bg:after {
+  content: '';
+  position: absolute;
+  width: 98%;
+  height: 98%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  align-content: center;
+}
+
+.back a {
+  font-family: 'Muli', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 200%;
+  z-index: 2;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  top: 90%;
+  left: 50%;
+
+}
+
+.back a:hover{
+  font-family: 'Muli', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 200%;
+  z-index: 2;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  top: 90%;
+  left: 50%;
+
+}
+
+
+video.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
