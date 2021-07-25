@@ -10880,17 +10880,24 @@ video.bg-video {
   height: auto;
   transform: translateX(-50%) translateY(-50%);
   z-index: 0;
+  background-size: cover;
 }
 
+video.bg-video-2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+  display: none;
+}
 @media (pointer: coarse) and (hover: none) {
-  body {
-    background: url("../assets/img/") #2a5555 no-repeat center center scroll;
-    background-size: cover;
-  }
 
-  body video {
-    display: none;
-  }
+ 
 }
 .masthead {
   position: relative;
@@ -10992,3 +10999,7 @@ video.bg-video {
     width: auto;
   }
 }
+
+
+
+ 
