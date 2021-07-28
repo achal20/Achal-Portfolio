@@ -1,3 +1,21 @@
+.console-container {
+  font-size:300%;
+  text-align:center;
+  height:20%;
+  width:60%;
+  color:white;
+  margin:2%;
+  align-content: center;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+
+
 /*
 
 TemplateMo 550 Diagoona
@@ -11,32 +29,16 @@ https://templatemo.com/tm-550-diagoona
   width:100%;
   height:100vh;
   background: #fff 
-  url('../img/preloder.gif')
+  url('img/preloder.gif')
   no-repeat center ;
   z-index: 99999;
 }
 
 
 
-/* Page Background */
-.tm-bg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    z-index: -1000;
-}
 
-.tm-bg-left,
-.tm-bg-right {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
-.tm-bg-right { background-color: rgba(0,0,0,0.6); }
+
 
 
 
@@ -52,12 +54,14 @@ https://templatemo.com/tm-550-diagoona
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
 }
 
 @media(min-width:1200px){
 
 body{
-    background-image: url("../img/index/monitor-screen-achal.png");
+    background-image: url("img/index/monitor-screen-achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -65,26 +69,26 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/monitor-screen-achal.png");}
-    10%{background-image: url("../img/index/monitor-screen-achal.png");}
+    0%{background-image: url("img/index/monitor-screen-achal.png");}
+    10%{background-image: url("img/index/monitor-screen-achal.png");}
 
-    20%{background-image: url("../img/index/monitor-screen-app.png");}
-    30%{background-image: url("../img/index/monitor-screen-app.png");}
-    40%{background-image: url("../img/index/monitor-screen-app.png");}
-    50%{background-image: url("../img/index/monitor-screen-app.png");}
+    20%{background-image: url("img/index/monitor-screen-app.png");}
+    30%{background-image: url("img/index/monitor-screen-app.png");}
+    40%{background-image: url("img/index/monitor-screen-app.png");}
+    50%{background-image: url("img/index/monitor-screen-app.png");}
 
-    60%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    70%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    80%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    90%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    100%{background-image: url("../img/index/monitor-screen-achal.png");}
+    60%{background-image: url("img/index/monitor-screen-quotes.png");}
+    70%{background-image: url("img/index/monitor-screen-quotes.png");}
+    80%{background-image: url("img/index/monitor-screen-quotes.png");}
+    90%{background-image: url("img/index/monitor-screen-quotes.png");}
+    100%{background-image: url("img/index/monitor-screen-achal.png");}
 } 
 }
 
 @media(max-width:1200px){
 
 body{
-    background-image: url("../img/index/monitor-screen-achal.png");
+    background-image: url("img/index/monitor-screen-achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -92,25 +96,25 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/monitor-screen-achal.png");}
-    0%{background-image: url("../img/index/monitor-screen-achal.png");}
+    0%{background-image: url("img/index/monitor-screen-achal.png");}
+    0%{background-image: url("img/index/monitor-screen-achal.png");}
 
-    20%{background-image: url("../img/index/monitor-screen-app.png");}
-    30%{background-image: url("../img/index/monitor-screen-app.png");}
-    40%{background-image: url("../img/index/monitor-screen-app.png");}
-    50%{background-image: url("../img/index/monitor-screen-app.png");}
+    20%{background-image: url("img/index/monitor-screen-app.png");}
+    30%{background-image: url("img/index/monitor-screen-app.png");}
+    40%{background-image: url("img/index/monitor-screen-app.png");}
+    50%{background-image: url("img/index/monitor-screen-app.png");}
 
-    60%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    70%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    80%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    90%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    00%{background-image: url("../img/index/monitor-screen-achal.png");}
+    60%{background-image: url("img/index/monitor-screen-quotes.png");}
+    70%{background-image: url("img/index/monitor-screen-quotes.png");}
+    80%{background-image: url("img/index/monitor-screen-quotes.png");}
+    90%{background-image: url("img/index/monitor-screen-quotes.png");}
+    00%{background-image: url("img/index/monitor-screen-achal.png");}
 } 
 }
 
 @media(max-width:990px){
 body{
-    background-image: url("../img/index/achal.png");
+    background-image: url("img/index/achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -118,25 +122,25 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/achal.png");}
-    10%{background-image: url("../img/index/achal.png");}
+    0%{background-image: url("img/index/achal.png");}
+    10%{background-image: url("img/index/achal.png");}
 
-    20%{background-image: url("../img/index/app.png");}
-    30%{background-image: url("../img/index/app.png");}
-    40%{background-image: url("../img/index/app.png");}
-    50%{background-image: url("../img/index/app.png");}
+    20%{background-image: url("img/index/app.png");}
+    30%{background-image: url("img/index/app.png");}
+    40%{background-image: url("img/index/app.png");}
+    50%{background-image: url("img/index/app.png");}
 
-    60%{background-image: url("../img/index/quotes.png");}
-    70%{background-image: url("../img/index/quotes.png");}
-    80%{background-image: url("../img/index/quotes.png");}
-    90%{background-image: url("../img/index/quotes.png");}
-    100%{background-image: url("../img/index/achal.png");}
+    60%{background-image: url("img/index/quotes.png");}
+    70%{background-image: url("img/index/quotes.png");}
+    80%{background-image: url("img/index/quotes.png");}
+    90%{background-image: url("img/index/quotes.png");}
+    100%{background-image: url("img/index/achal.png");}
 } 
 
 }
 @media(max-width:800px){
     body{
-    background-image: url("../img/index/monitor-screen-achal.png");
+    background-image: url("img/index/monitor-screen-achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -144,24 +148,24 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/monitor-screen-achal.png");}
-    10%{background-image: url("../img/index/monitor-screen-achal.png");}
+    0%{background-image: url("img/index/monitor-screen-achal.png");}
+    10%{background-image: url("img/index/monitor-screen-achal.png");}
 
-    20%{background-image: url("../img/index/monitor-screen-app.png");}
-    30%{background-image: url("../img/index/monitor-screen-app.png");}
-    40%{background-image: url("../img/index/monitor-screen-app.png");}
-    50%{background-image: url("../img/index/monitor-screen-app.png");}
+    20%{background-image: url("img/index/monitor-screen-app.png");}
+    30%{background-image: url("img/index/monitor-screen-app.png");}
+    40%{background-image: url("img/index/monitor-screen-app.png");}
+    50%{background-image: url("img/index/monitor-screen-app.png");}
 
-    60%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    70%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    80%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    90%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    100%{background-image: url("../img/index/monitor-screen-achal.png");}
+    60%{background-image: url("img/index/monitor-screen-quotes.png");}
+    70%{background-image: url("img/index/monitor-screen-quotes.png");}
+    80%{background-image: url("img/index/monitor-screen-quotes.png");}
+    90%{background-image: url("img/index/monitor-screen-quotes.png");}
+    100%{background-image: url("img/index/monitor-screen-achal.png");}
 } 
 }
 @media(max-width:600px){
     body{
-    background-image: url("../img/index/monitor-screen-achal.png");
+    background-image: url("img/index/monitor-screen-achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -169,24 +173,24 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/monitor-screen-achal.png");}
-    10%{background-image: url("../img/index/monitor-screen-achal.png");}
+    0%{background-image: url("img/index/monitor-screen-achal.png");}
+    10%{background-image: url("img/index/monitor-screen-achal.png");}
 
-    20%{background-image: url("../img/index/monitor-screen-app.png");}
-    30%{background-image: url("../img/index/monitor-screen-app.png");}
-    40%{background-image: url("../img/index/monitor-screen-app.png");}
-    50%{background-image: url("../img/index/monitor-screen-app.png");}
+    20%{background-image: url("img/index/monitor-screen-app.png");}
+    30%{background-image: url("img/index/monitor-screen-app.png");}
+    40%{background-image: url("img/index/monitor-screen-app.png");}
+    50%{background-image: url("img/index/monitor-screen-app.png");}
 
-    60%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    70%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    80%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    90%{background-image: url("../img/index/monitor-screen-quotes.png");}
-    100%{background-image: url("../img/index/monitor-screen-achal.png");}
+    60%{background-image: url("img/index/monitor-screen-quotes.png");}
+    70%{background-image: url("img/index/monitor-screen-quotes.png");}
+    80%{background-image: url("img/index/monitor-screen-quotes.png");}
+    90%{background-image: url("img/index/monitor-screen-quotes.png");}
+    100%{background-image: url("img/index/monitor-screen-achal.png");}
 } 
 }
 @media(max-width:500px){
     body{
-    background-image: url("../img/index/mobile-screen-achal1.png");
+    background-image: url("img/index/mobile-screen-achal1.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -194,25 +198,25 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/mobile-screen-achal1.png");}
-    10%{background-image: url("../img/index/mobile-screen-achal1.png");}
+    0%{background-image: url("img/index/mobile-screen-achal1.png");}
+    10%{background-image: url("img/index/mobile-screen-achal1.png");}
 
-    20%{background-image: url("../img/index/mobile-screen-app1.png");}
-    30%{background-image: url("../img/index/mobile-screen-app1.png");}
-    40%{background-image: url("../img/index/mobile-screen-app1.png");}
-    50%{background-image: url("../img/index/mobile-screen-app1.png");}
+    20%{background-image: url("img/index/mobile-screen-app1.png");}
+    30%{background-image: url("img/index/mobile-screen-app1.png");}
+    40%{background-image: url("img/index/mobile-screen-app1.png");}
+    50%{background-image: url("img/index/mobile-screen-app1.png");}
 
-    60%{background-image: url("../img/index/mobile-screen-quotes1.png");}
-    70%{background-image: url("../img/index/mobile-screen-quotes1.png");}
-    80%{background-image: url("../img/index/mobile-screen-quotes1.png");}
-    90%{background-image: url("../img/index/mobile-screen-quotes1.png");}
-    100%{background-image: url("../img/index/mobile-screen-achal1.png");}
+    60%{background-image: url("img/index/mobile-screen-quotes1.png");}
+    70%{background-image: url("img/index/mobile-screen-quotes1.png");}
+    80%{background-image: url("img/index/mobile-screen-quotes1.png");}
+    90%{background-image: url("img/index/mobile-screen-quotes1.png");}
+    100%{background-image: url("img/index/mobile-screen-achal1.png");}
 } 
 }
 
 @media(max-width:415px){
     body{
-    background-image: url("../img/index/mobile-screen-achal.png");
+    background-image: url("img/index/mobile-screen-achal.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -220,25 +224,25 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/mobile-screen-achal.png");}
-    10%{background-image: url("../img/index/mobile-screen-achal.png");}
+    0%{background-image: url("img/index/mobile-screen-achal.png");}
+    10%{background-image: url("img/index/mobile-screen-achal.png");}
 
-    20%{background-image: url("../img/index/mobile-screen-app.png");}
-    30%{background-image: url("../img/index/mobile-screen-app.png");}
-    40%{background-image: url("../img/index/mobile-screen-app.png");}
-    50%{background-image: url("../img/index/mobile-screen-app.png");}
+    20%{background-image: url("img/index/mobile-screen-app.png");}
+    30%{background-image: url("img/index/mobile-screen-app.png");}
+    40%{background-image: url("img/index/mobile-screen-app.png");}
+    50%{background-image: url("img/index/mobile-screen-app.png");}
 
-    60%{background-image: url("../img/index/mobile-screen-quotes.png");}
-    70%{background-image: url("../img/index/mobile-screen-quotes.png");}
-    80%{background-image: url("../img/index/mobile-screen-quotes.png");}
-    90%{background-image: url("../img/index/mobile-screen-quotes.png");}
-    100%{background-image: url("../img/index/mobile-screen-achal.png");}
+    60%{background-image: url("img/index/mobile-screen-quotes.png");}
+    70%{background-image: url("img/index/mobile-screen-quotes.png");}
+    80%{background-image: url("img/index/mobile-screen-quotes.png");}
+    90%{background-image: url("img/index/mobile-screen-quotes.png");}
+    100%{background-image: url("img/index/mobile-screen-achal.png");}
 } 
 }
 
 @media(max-width:330px){
     body{
-    background-image: url("../img/index/mobile-screen-achal2.png");
+    background-image: url("img/index/mobile-screen-achal2.png");
     background-size: cover;
     align-items: center;
     background-repeat: no-repeat;
@@ -246,19 +250,19 @@ body{
 
 }
 @keyframes slider{
-    0%{background-image: url("../img/index/mobile-screen-achal2.png");}
-    10%{background-image: url("../img/index/mobile-screen-achal2.png");}
+    0%{background-image: url("img/index/mobile-screen-achal2.png");}
+    10%{background-image: url("img/index/mobile-screen-achal2.png");}
 
-    20%{background-image: url("../img/index/mobile-screen-app2.png");}
-    30%{background-image: url("../img/index/mobile-screen-app2.png");}
-    40%{background-image: url("../img/index/mobile-screen-app2.png");}
-    50%{background-image: url("../img/index/mobile-screen-app2.png");}
+    20%{background-image: url("img/index/mobile-screen-app2.png");}
+    30%{background-image: url("img/index/mobile-screen-app2.png");}
+    40%{background-image: url("img/index/mobile-screen-app2.png");}
+    50%{background-image: url("img/index/mobile-screen-app2.png");}
 
-    60%{background-image: url("../img/index/mobile-screen-quotes2.png");}
-    70%{background-image: url("../img/index/mobile-screen-quotes2.png");}
-    80%{background-image: url("../img/index/mobile-screen-quotes2.png");}
-    90%{background-image: url("../img/index/mobile-screen-quotes2.png");}
-    100%{background-image: url("../img/index/mobile-screen-achal2.png");}
+    60%{background-image: url("img/index/mobile-screen-quotes2.png");}
+    70%{background-image: url("img/index/mobile-screen-quotes2.png");}
+    80%{background-image: url("img/index/mobile-screen-quotes2.png");}
+    90%{background-image: url("img/index/mobile-screen-quotes2.png");}
+    100%{background-image: url("img/index/mobile-screen-achal2.png");}
 } 
 }
 
