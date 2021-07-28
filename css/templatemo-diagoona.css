@@ -16,13 +16,7 @@
 
 
 
-/*
 
-TemplateMo 550 Diagoona
-
-https://templatemo.com/tm-550-diagoona
-
-*/
 
 #loading{
   position: fixed;
@@ -33,18 +27,6 @@ https://templatemo.com/tm-550-diagoona
   no-repeat center ;
   z-index: 99999;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .tm-container {
     width: 100%;
@@ -58,7 +40,11 @@ https://templatemo.com/tm-550-diagoona
     background-color: rgba(0,0,0,0.6);
 }
 
-
+@media(max-width:415px){
+    .console-container {
+         font-size:200%;
+    }
+}
 
 
 
