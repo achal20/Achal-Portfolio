@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Achal Gupta Portfolio">
+  <meta name="author" content="Achal Gupta">
+  <meta name="keywords" content="Achal Gupta,Achal Gupta Portfolio,Achal,Achal Portfolio,Achal About Us, Achal Portfolio About Us Page, Achal About Us Page,Achal Creative Designer, Achal Gupta Creative Designer, Achal Graphic Designer, Achal Gupta Website Designer ">
+
+
+  <title>Achal Gupta</title>
+    <link rel='icon' href='img/ag.png' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156533656-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156533656-1');
+</script>
+
+
+</head>
+
+<body onload="loading()">
+    
+<script type="text/javascript">
+
+  var name = prompt("Please enter your Full name?" );
+
+  
+
+</script>
+
+
+
+    <div class="tm-container">  
+
+ <div class='console-container'><span id='text'></span> <div class='console-underscore' id='console'>&#95;</div> </div>       
+
+
+      
+        
+                <div class="rows" style="text-align: center;">
+        
+        
+   
+    <a href="About us.html"><img src="img/Home/about us 2.png"style="width:200px;height:180px;text-align:center;margin-left:3%; margin-right:3%; margin-top:3%;" alt="about us Page"  ></a>
+    <a href="Services Provided.html"><img src="img/Home/Services Provided 2.png"style="width:200px;height:180px;text-align:center; margin-left:3%; margin-right:3%; margin-top:3%" alt="Services Provided Page"  ></a>
+    <a href="My Projects.html"><img src="img/Home/My Project 2.png"style="width:200px;height:180px;text-align:center; margin-left:3%; margin-right:3%; margin-top:3%" alt="My Project Page"  ></a>
+    <a href="Connect Us.html"><img src="img/Home/Connect us 2.png"style="width:200px;height:180px;text-align:center; margin-left:3%; margin-right:3%; margin-top:3%" alt="Connect us Page"  ></a>
+   
+
+    
+
+
+       
+
+        </div>
+          
+               
+
+        
+                    
+            <div class="tm-col-center tm-col-footer">
+                <footer class="tm-site-footer text-right">
+                    <p style="text-align:center; color:white";class="mb-0">Copyright by Achal Gupta </p>
+                    
+                    
+                </footer>
+             
+        </div>
+
+        <!-- Diagonal background design -->
+        <div class="tm-bg">
+            
+            <div class="tm-bg-right"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+   
+   <script type="text/javascript">
+       
+       // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Hello...'+ (name), 'Welcome to our','Portfolio Website .'], 'text',['white','white','white']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+   </script>
+
+   <script> 
+
+var preloder = document.getElementById('loading')
+function loading(){
+     preloder.style.display = "none";
+
+}
+  </script>
+
+
+</body>
+</html>
