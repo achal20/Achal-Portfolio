@@ -65,9 +65,10 @@ Table of Content:
 a {
 
   color: white;
-  transition: all 0.1s ease-in-out; }
+  transition: all 0.1s ease-in-out;
+  text-decoration: none; }
   a:hover, a:focus {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     outline: none; }
 
@@ -231,12 +232,57 @@ align-self: center;		}
         color: #ff8c00;}
 
 		
-		
-		
+.progress_br{
+  border: 1px solid #e5763c;
+  padding: 2%;
+  margin-top: 3%;
+  border-radius: 10px;
+}		
 		
 		
 
-  
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #e8e8e8;
+}
+
+
+ .progress .progress-bar {
+    transition: width .6s ease;
+    height: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+    align-self: center;
+    background-image: -webkit-linear-gradient(0deg, #ac004f 0%, #e5763c 100%);
+}
+
+
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ac004f;
+    transition: width .6s ease;
+}
+
+
+		
+
+  .media-body{
+    width: 100%;
+  }
+
+
+
+
   .tabs_inner .tab-content .tab-pane .list li {
     margin-bottom: 60px;
     position: relative; }
@@ -245,92 +291,28 @@ align-self: center;		}
     .tabs_inner .tab-content .tab-pane .list li:last-child {
       margin-bottom: 0px; }
     .tabs_inner .tab-content .tab-pane .list li .media .d-flex {
-      padding-right: 100px; }
+      padding-right: 10%;
+      width: 30%; }
       .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 0px;
-        padding-top: 20px; }
+        padding-top: 5%;
+        font-size: 100%;
+      }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {
       color: #fff;
-      font-size: 21px;
+      font-size: 150%;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 5%;
+      margin-top: 5%; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
       color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 0px; }
+      margin-bottom: 2%;
+      font-size: 100%; }
 
 /* End My Tabs Area css
 ============================================================================================ */
-/* Feature Area css
-============================================================================================ */
-.feature_area {
-  background: #f9f9ff; }
-  .feature_area.feature_tow {
-    background: #fff; }
-    .feature_area.feature_tow .feature_item {
-      background: #f9f9ff; }
-      .feature_area.feature_tow .feature_item:hover {
-        background: #fff; }
-  .feature_area.white_feature {
-    background: #fff; }
-    .feature_area.white_feature .feature_item {
-      background: #f9f9ff; }
-      .feature_area.white_feature .feature_item:hover {
-        background: #fff; }
 
-.feature_inner {
-  margin-bottom: -30px; }
-
-.feature_item {
-  padding: 15% 5%;
-  border-radius: 10%;
-  transition: all 2s linear 1s;
-  background: #fff;
-  margin-bottom: 10%; }
-  .feature_item i {
-    margin-bottom: 35px;
-    display: block; }
-    .feature_item i:before {
-      margin: 30%;
-	  text-align: center;
-      font-size: 60px;
-      
-      line-height: 60px; }
-  .feature_item h4 {
-    
-    font-size: 21px;
-    font-family: "Heebo", sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase; }
-	
-	.feature_item:hover h4 {
-      background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-	  
-  .feature_item p {
-    margin-bottom: 0px; }
-
-    ..feature_item:hover P{
-       background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-
-  .feature_item .main_btn {
-    padding: 0px 30px;
-    line-height: 38px; }
-  .feature_item:hover {
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
-    border-color: #fff;
-    background: #000; }
-    .feature_item:hover i:before {
-      background: -webkit-linear-gradient(0deg, #e87f00 0%, #ac004f 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-
-/* End Feature Area css
-============================================================================================ */
 /* Personal Profile Area css
 ============================================================================================ */
 .profile_area .col-lg-7 {
@@ -342,26 +324,7 @@ align-self: center;		}
   .profile_inner .personal_text {
     padding-left: 95px; }
 
-.personal_text h6 {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2.1px;
-  font-weight: normal;
-  margin-bottom: 12px;
-  color: #ff9800; }
-.personal_text h4 {
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 4%;
-  color: #ff9800; }
-.personal_text h3 {
-  font-size: 48px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: #ff9800; }
+
 .personal_text p {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
@@ -408,242 +371,3 @@ align-self: center;		}
 /* End Personal Profile Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Gallery Area css
-============================================================================================ */
-.isotope_fillter {
-  margin-bottom: 50px; }
-  .isotope_fillter .gallery_filter {
-    text-align: center; }
-    .isotope_fillter .gallery_filter li {
-      display: inline-block;
-      margin-right: 45px; }
-      .isotope_fillter .gallery_filter li:last-child {
-        margin-right: 0px; }
-      .isotope_fillter .gallery_filter li a {
-        font-size: 12px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        color: #ff9800;
-        transition: all 300ms linear 0s;
-        text-transform: uppercase; }
-      .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
-        color: #ff9800; }
-
-.gallery_f_inner {
-  margin-bottom: -45px; }
-
-.h_gallery_item {
-  display: inline-block;
-  margin-bottom: 45px; }
-  .h_gallery_item .g_img_item {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 5px; }
-    .h_gallery_item .g_img_item:before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-      background-image: -moz-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-      background-image: -webkit-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-      background-image: -ms-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-      position: absolute;
-      opacity: 0;
-      transition: all 300ms ease; }
-    .h_gallery_item .g_img_item .light {
-      position: absolute;
-      left: 0px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      text-align: center;
-      opacity: 0; }
-  .h_gallery_item .g_item_text {
-    text-align: center; }
-    .h_gallery_item .g_item_text h4 {
-      color: #ff9800;
-      font-size: 21px;
-      margin-top: 22px;
-      transition: all 300ms linear 0s; }
-	  
-    .h_gallery_item .g_item_text p {
-      margin-bottom: 0px; }
-  .h_gallery_item:hover .g_img_item:before {
-    opacity: .85; }
-  .h_gallery_item:hover .g_img_item .light {
-    opacity: 1; }
-  .h_gallery_item:hover .g_item_text h4:hover {
-    color: #ff9800; }
-
-.more_btn {
-  text-align: center;
-  margin-top: 80px; }
-
-/* End Gallery Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Testimonials Area css
-============================================================================================ */
-.testimonials_area {
-  background: #f9f9ff; }
-  .testimonials_area.testi_two {
-    background: #fff; }
-    .testimonials_area.testi_two .testi_inner {
-      margin-top: -20px;
-      margin-bottom: -20px; }
-    .testimonials_area.testi_two .owl-item {
-      padding: 20px 0px; }
-    .testimonials_area.testi_two .testi_item {
-      background: #f9f9ff;
-      border-color: #f9f9ff;
-      transition: all 300ms linear 0s; }
-      .testimonials_area.testi_two .testi_item:hover {
-        background: #fff;
-        border-color: #fff;
-        box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.1); }
-
-.testi_inner .col-lg-3 {
-  vertical-align: middle;
-  align-self: center; }
-
-.test_title h2 {
-  color: #ff9800;
-  font-size: 36px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin-bottom: 12px; }
-.test_title p {
-  margin-bottom: 0px; }
-
-.testi_item {
-  border: 1px solid #eeeeee;
-  border-radius: 10px;
-  background: #fff;
-  padding: 40px 28px; }
-  .testi_item p {
-    font-style: italic; }
-  .testi_item h4 {
-    color: #ff9800;
-    font-size: 18px;
-    text-transform: uppercase; }
-  .testi_item a {
-    color: #ffc000; }
-
-/* End Testimonials Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/* Footer Area css
-============================================================================================ */
-.footer_area {
-  background: #000; }
-
-.f_title {
-  margin-bottom: 35px; }
-  .f_title h3 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Heebo", sans-serif;
-    margin-bottom: 0px; }
-
-.ab_widget p {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Roboto", sans-serif;
-  color: #ff9800;
-  margin-bottom: 30px; }
-  .ab_widget p a {
-    color: #ff9800; }
-  .ab_widget p + p {
-    margin-bottom: 0px; }
-
-.news_widget {
-  padding-right: 15px; }
-  .news_widget p {
-    font-size: 14px;
-    line-height: 24px;
-    font-family: "Roboto", sans-serif;
-    color: #ff9800;
-    margin-bottom: 15px; }
-  .news_widget .input-group input {
-    height: 40px;
-    background: transparent;
-    border-radius: 0px;
-    width: 80%;
-    border: none;
-    padding: 0px 15px;
-    border: 1px solid #1e233b;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    color: #cccccc;
-    outline: none;
-    box-shadow: none; }
-    .news_widget .input-group input.placeholder {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      color: #cccccc; }
-    .news_widget .input-group input:-moz-placeholder {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      color: #cccccc; }
-    .news_widget .input-group input::-moz-placeholder {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      color: #cccccc; }
-    .news_widget .input-group input::-webkit-input-placeholder {
-      font-size: 14px;
-      font-family: "Roboto", sans-serif;
-      font-weight: normal;
-      color: #cccccc; }
-  .news_widget .input-group .sub-btn {
-    border-radius: 0px;
-    background-image: -moz-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-    background-image: -webkit-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-    background-image: -ms-linear-gradient(0deg, #e87f000%, #ac004f 100%);
-    outline: none !important;
-    box-shadow: none !important;
-    padding: 0px;
-    border: none;
-    width: 42px;
-    cursor: pointer;
-    color: #fff; }
-
-.social_widget p {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Roboto", sans-serif;
-  color: #ff9800;
-  margin-bottom: 10px; }
-.social_widget .list li {
-  margin-right: 17px;
-  display: inline-block; }
-  .social_widget .list li a {
-    color: #cccccc;
-    font-size: 14px;
-    transition: all 300ms linear 0s; }
-  .social_widget .list li:last-child {
-    margin-right: 0px; }
-  .social_widget .list li:hover a {
-    color: #ff9800; }
-
-.copy_right_text {
-  text-align: center;
-  margin-top: 60px; }
-  .copy_right_text p a {
-    color: #ff9800; }
-
-/* End Footer Area css
-============================================================================================ */
-/*---------------------------------------------------- */
-
-
-
-

@@ -10,7 +10,7 @@
 		border-radius: 0px;
 	}
 }
-@media (max-width:1300px){
+@media (max-width:1200px){
 	.testimonials_area .owl-prev, .testimonials_area .owl-next {
 		right: auto;
 		left: 50%;
@@ -26,7 +26,7 @@
 		margin-left: -40px;
 	}
 }
-@media (max-width:1300px){
+@media (max-width:1200px){
 	/* Main Menu Area css
 	============================================================================================ */
 	.header_area .navbar .nav .nav-item {
@@ -426,7 +426,7 @@
 	}
 	.tabs_inner .tab-content .tab-pane .list li .media .d-flex {
 		padding-right: 0px;
-		padding-bottom: 18px;
+		padding-bottom: 1%;
 	}
 	.tabs_inner .tab-content .tab-pane .list li .media {
 		display: block;
