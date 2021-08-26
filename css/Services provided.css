@@ -1,0 +1,96 @@
+/*----------------------------------------------------
+/-----------------------------------------*/
+
+
+#loading{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background: #fff 
+  url('../img/preloder.gif')
+  no-repeat center ;
+  z-index: 99999;
+
+}
+
+
+
+
+/*----------------------------------------------------*/
+/* Gallery Area css
+============================================================================================ */
+  .isotope_fillter .gallery_filter {
+    text-align: center; }
+    .isotope_fillter .gallery_filter li {
+      display: inline-block;
+      margin-right: 45px; }
+      .isotope_fillter .gallery_filter li:last-child {
+        margin-right: 0px; }
+      .isotope_fillter .gallery_filter li a {
+        font-size: 12px;
+        font-weight: 500;
+        color: #222222;
+        transition: all 300ms linear 0s;
+        text-transform: uppercase;
+        text-decoration: none; }
+      .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
+        color: #ff8c00;
+        text-decoration: underline; }
+
+.gallery_f_inner {
+  margin-bottom: -45px; }
+
+.h_gallery_item {
+  display: inline-block;
+  margin-bottom: 5%; }
+  .h_gallery_item .g_img_item {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px; }
+    .h_gallery_item .g_img_item:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+      position: absolute;
+      opacity: 0;
+      transition: all 2s ease; }
+    .h_gallery_item .g_img_item .light {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      opacity: 0; }
+  .h_gallery_item .g_item_text {
+    text-align: center; }
+    .h_gallery_item .g_item_text h4 {
+      color: #fff;
+      font-size: 21px;
+      margin-top: 22px;
+      transition: all 300ms linear 0s; }
+    .h_gallery_item .g_item_text p {
+      margin-bottom: 0px; }
+  .h_gallery_item:hover .g_img_item:before {
+    opacity: .85; }
+  .h_gallery_item:hover .g_img_item .light {
+    opacity: 1; }
+  .h_gallery_item:hover .g_item_text h4:hover {
+    color: #fff; }
+
+.more_btn {
+  text-align: center;
+  padding: 15%; }
+
+/* End Gallery Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+/*---------------------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
